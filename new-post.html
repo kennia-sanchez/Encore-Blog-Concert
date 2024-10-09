@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles-new-post.css">
+        <title>Encore | Blog Concert</title>
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-home">
+                        <i class="fa-solid fa-drum"></i>
+                        <h1 class="blog-name">Encore</h1>
+                    </a>
+                </div>
+                <div class="right-section">
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Search...">
+                    </div>
+                    <img class="profile-picture" src="https://i.mydramalist.com/E5v125_5c.jpg" alt="profile-picture">
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="new-post-container">
+            <h1>Create Post</h1>
+            <form class="post-form">
+                <input type="text" id="post-title" placeholder="Title" required>
+                <textarea name="content" id="post-content" rows="10" placeholder="Content" required></textarea>
+                <div class="author-image-container">
+                    <input type="text" id="post-author" placeholder="Author" required>
+                    <input type="file" id="post-image">
+                </div>
+            </form>
+            <button type="submit" name="submit" class="post-btn">Post</button>
+        </div>
+    </body>
+</html>

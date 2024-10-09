@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section i {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo-home {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blog-name {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.right-section {
+    display:flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.search {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search .input {
+    background-color: white;
+    border: 0;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.search .input:hover, .search .input:focus {
+    width: 200px;
+    height: 35px;
+    outline: 0;
+}
+
+/* SIDE BAR */
+.sidebar {
+    width: 15%;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    min-height: 30vh;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+
+.post-btn {
+    background-color: #333;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-btn:hover {
+    background-color: #555;
+}
+
+.post-btn:active {
+    transform: scale(0.98);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    color: gray;
+}
+
+/* BLOG SECTION */
+main {
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+}
+
+.blog-posts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.post-header {
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.blog-title {
+    font-size: 22px;
+    margin: 0;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.post-content {
+    display: flex;
+    gap: 20px;
+    align-items: start;
+    position: relative;
+}
+
+.post-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+.post-image:hover {
+    width: 300px;
+}
+
+.blog-description::first-letter {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
